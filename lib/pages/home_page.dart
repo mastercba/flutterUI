@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/circle_container.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -8,23 +9,11 @@ class HomePage extends StatelessWidget {
         title: Text("My flutter app"),
       ),
       body: Center(
-        child: Text(
-          "Hello \n Developers",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-              //entramos a la clase TextStyle con Ctrl + click
-              color: Colors.red[900],
-              fontSize: 45,
-              letterSpacing: 2,
-              shadows: [
-                //requiere que le pase una lista de shadows
-                Shadow(
-                    color: Colors.grey[400], //MAYUCULA EMPIEZA la Instancia
-                    blurRadius: 3,
-                    offset: Offset(5, 5))
-              ],
-              fontWeight: FontWeight.w300 //.w300   .bold
-              ),
+        child: CircleContainer(
+          child: Text("Hola"),
+          width: 100,
+          height: 100,
+          //style: TextStyle(fontSize: 40),
         ),
       ),
     );
