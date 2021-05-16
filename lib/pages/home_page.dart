@@ -12,8 +12,26 @@ class HomePage extends StatelessWidget {
         top: true,
         bottom: true,
         child: Container(
-          child: Text("HOLA"),
-          alignment: Alignment.bottomCenter,
+          width: double.infinity, //tome mi container todo el ancho posible
+          color: Colors.white,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              Text("Bienvenido"),
+              Text(
+                "Marco Torrico",
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              ),
+              Container(
+                height: 1,
+                width: 100,
+                margin: EdgeInsets.symmetric(vertical: 20),
+                color: Color(0xffaaaaaa),
+              )
+            ],
+          ),
         ),
       ),
     );
