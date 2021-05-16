@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/avatar.dart';
 import 'package:flutter_ui/widgets/bottom_menu.dart';
 import '../widgets/circle_container.dart';
 import 'package:flutter/cupertino.dart';
@@ -36,18 +37,22 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
+              Avatar(),
+              SizedBox(
+                height: 40,
+              ),
               Text("Bienvenido"),
               Text(
                 "Marco Torrico",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
-              Container(
+/*               Container(
                 height: 1,
                 width: 100,
                 margin: EdgeInsets.symmetric(vertical: 20),
                 color: Color(0xffaaaaaa),
-              ),
-              Row(
+              ), */
+/*               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
@@ -72,7 +77,7 @@ class HomePage extends StatelessWidget {
                   //   color: Colors.blue,
                   // ),
                 ],
-              )
+              ) */
             ],
           ),
         ),
