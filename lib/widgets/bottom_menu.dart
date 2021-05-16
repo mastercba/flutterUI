@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class BottomMenuItem {
@@ -17,7 +18,8 @@ class BottomMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       //height: 50,
-      color: Color(0xfff0f0f0),
+      //color: Color(0xfff0f0f0),
+      color: Colors.white,
       padding: EdgeInsets.all(10),
       child: SafeArea(
         child: Row(
@@ -32,7 +34,13 @@ class BottomMenu extends StatelessWidget {
                   item.iconPath,
                   width: 35,
                 ),
-                Text(item.label)
+                SizedBox(
+                  height: 3,
+                ),
+                Text(
+                  item.label,
+                  style: TextStyle(fontSize: 16),
+                )
               ],
             );
           }),

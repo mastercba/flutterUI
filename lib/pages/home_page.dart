@@ -19,10 +19,10 @@ class HomePage extends StatelessWidget {
       // ),
       bottomNavigationBar: BottomMenu(
         items: [
-          BottomMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Inicio'),
-          BottomMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Historial'),
-          BottomMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Ofertas'),
-          BottomMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Mi Perfil'),
+          BottomMenuItem(iconPath: 'assets/icons/home.svg', label: 'Inicio'),
+          BottomMenuItem(iconPath: 'assets/icons/star.svg', label: 'Favoritos'),
+          BottomMenuItem(iconPath: 'assets/icons/menu1.svg', label: 'Ofertas'),
+          BottomMenuItem(iconPath: 'assets/icons/question.svg', label: 'About'),
         ],
       ),
       body: SafeArea(
