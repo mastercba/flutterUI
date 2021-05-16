@@ -29,6 +29,32 @@ class HomePage extends StatelessWidget {
                 width: 100,
                 margin: EdgeInsets.symmetric(vertical: 20),
                 color: Color(0xffaaaaaa),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  CircleContainer(
+                      child: Icon(Icons.add), height: 55, width: 55),
+                  //Container(
+                  //  width: 20,
+                  //),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  CircleContainer(
+                      child: Icon(Icons.remove), height: 55, width: 55),
+                  // Container(
+                  //   width: 100,
+                  //   height: 100,
+                  //   color: Colors.red,
+                  // ),
+                  // Container(
+                  //   width: 120,
+                  //   height: 120,
+                  //   color: Colors.blue,
+                  // ),
+                ],
               )
             ],
           ),
