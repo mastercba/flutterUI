@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/widgets/bottom_menu.dart';
 import '../widgets/circle_container.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -8,6 +9,22 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      // bottomNavigationBar: BottomNavigationBar(
+      //   items: [
+      //     BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Home")),
+      //     BottomNavigationBarItem(icon: Icon(Icons.list), title: Text("List")),
+      //     BottomNavigationBarItem(
+      //         icon: Icon(Icons.home), title: Text("Profile"))
+      //   ],
+      // ),
+      bottomNavigationBar: BottomMenu(
+        items: [
+          BottomMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Inicio'),
+          BottomMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Historial'),
+          BottomMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Ofertas'),
+          BottomMenuItem(iconPath: 'assets/icons/menu.svg', label: 'Mi Perfil'),
+        ],
+      ),
       body: SafeArea(
         top: true,
         bottom: true,
