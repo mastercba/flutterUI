@@ -27,21 +27,25 @@ class BottomMenu extends StatelessWidget {
           children: List.generate(items.length, (index) {
             final BottomMenuItem item = items[index];
 
-            return Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                SvgPicture.asset(
-                  item.iconPath,
-                  width: 35,
-                ),
-                SizedBox(
-                  height: 3,
-                ),
-                Text(
-                  item.label,
-                  style: TextStyle(fontSize: 16),
-                )
-              ],
+            return CupertinoButton(
+              padding: EdgeInsets.zero,
+              onPressed: () {},
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  SvgPicture.asset(
+                    item.iconPath,
+                    width: 35,
+                  ),
+                  SizedBox(
+                    height: 3,
+                  ),
+                  Text(
+                    item.label,
+                    style: TextStyle(fontSize: 16, color: Colors.black),
+                  )
+                ],
+              ),
             );
           }),
         ),

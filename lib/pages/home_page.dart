@@ -78,6 +78,19 @@ class HomePage extends StatelessWidget {
                   // ),
                 ],
               ) */
+
+              FlatButton(
+                child: Text("UPLOAD"),
+                onPressed: () => print("uploading..."),
+              ),
+              CupertinoButton(
+                child: Text("UPLOAD"),
+                color: Colors.blue,
+                //???????minSize: 10,
+                //padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                onPressed: () => print("uploading..."),
+                //onPressed: null, //desactivado
+              ),
             ],
           ),
         ),
